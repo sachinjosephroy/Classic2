@@ -19,7 +19,7 @@ public class HomePage {
 	@FindBy(xpath="//td[@class='headertext']")
 	WebElement tdUsername;
 	
-	public String getUsername() {
+	public String getUsername() throws InterruptedException {
 		TestUtils.getFrame(driver);
 		return tdUsername.getText();
 	}

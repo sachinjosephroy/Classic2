@@ -11,7 +11,9 @@ public class TestUtils {
 		je.executeScript("arguments[0].click()", element);
 	}
 	
-	public static void getFrame(WebDriver driver) {
+	public static void getFrame(WebDriver driver) throws InterruptedException {
+		Thread.sleep(5000);
+		driver.switchTo().defaultContent();
 		driver.switchTo().frame("mainpanel");
 	}
 

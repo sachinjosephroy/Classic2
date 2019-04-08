@@ -19,5 +19,9 @@ public class TestContext {
 	public PageObjectManager getPageObjectManager() {
 		return pageObjectManager;
 	}
+	
+	public WebDriverManager getWebDriverManager() {
+		return webDriverManager;
+	}
 
 }
